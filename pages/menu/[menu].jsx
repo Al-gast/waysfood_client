@@ -4,14 +4,12 @@ import Button from "../../components/Button"
 import { useRouter } from "next/router";
 import Rp from 'rupiah-format'
 import { useContext, useEffect, useState } from "react";
-import { CartContext } from "../../context/CartContext";
 import { API } from "../api/api";
 import { useMutation } from "react-query";
 
 
 export default function menus() {
   const router = useRouter()
-  const [carts, setCarts] = useContext(CartContext)
   const id = router.query.menu
 
   const [cart, setCart] = useState([])

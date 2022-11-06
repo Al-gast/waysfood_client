@@ -51,7 +51,7 @@ export default function ListProduct() {
               </tr>
             </thead>
             {data.map ((item, index) => (
-              <tbody>
+              <tbody key={item.id}>
                 <tr className="border-b bg-white">
                   <td className="py-4 px-6">{index + 1}</td>
                   <td className="py-4 px-6"><img src={`http://localhost:5000/uploads/${item.image}`} alt="" className="m-0 h-[134px] w-[224px] object-cover object-center"/></td>

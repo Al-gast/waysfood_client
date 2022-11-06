@@ -18,8 +18,6 @@ export default function Home() {
   const handleClick = () => setShowLogin(true);
 
   const [shop, setShop] = useState([])
-  console.log("shoppppppppppppppppppppppppppppppp", shop);
-
 
   useEffect(() => {
     const getShops = async (e) => {
@@ -60,7 +58,7 @@ export default function Home() {
           <h1 className="text-secondary font-bold mb-4 text-3xl font-header">Popular Restaurant</h1>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-2 mb-16">
             {shop?.map((item)=>(
-              <div onClick={!state.isLogin ? handleClick : () => router.push(`/menu/${item.id}`)}>  
+              <div key={item.id} onClick={!state.isLogin ? handleClick : () => router.push(`/menu/${item.id}`)}>  
                   <Card>
                       <div className="flex justify-start items-center">
                         <img src={item.image} alt="logo" className="mr-3 h-[70px] w-[70px] object-cover object-center rounded-full" />
@@ -76,7 +74,7 @@ export default function Home() {
           <h1 className="text-secondary font-bold mb-4 text-3xl font-header">Restaurant Near You</h1>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-2 mb-16">
             {shop?.map((item)=>(
-            <div onClick={!state.isLogin ? handleClick : () => router.push(`/menu/${item.id}`)}>
+            <div key={item.id} onClick={!state.isLogin ? handleClick : () => router.push(`/menu/${item.id}`)}>
                 <Card>
                     <div className="">
                       <img src={item.products[0]?.image} alt="logo" className="mb-2 h-[134px] w-[224px] object-cover object-center"/>

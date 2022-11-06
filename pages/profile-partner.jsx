@@ -69,8 +69,7 @@ export default function profile() {
                 ) : (
                 <div className='overflow-y-auto scrollbar-hide h-[17.5rem]'>
                 {income?.map((item) => (
-                    <div>
-                      <Card className="block p-3 max-w-sm bg-white rounded-lg border border-gray-200 shadow-sm">
+                      <Card key={item.id} className="block p-3 max-w-sm bg-white rounded-lg border border-gray-200 shadow-sm">
                         <div className="flex justify-between">
                           <div>
                             <p>{item.buyer.fullname}</p>
@@ -91,7 +90,6 @@ export default function profile() {
                           </div>
                         </div>
                       </Card>
-                    </div>
                   ))}
                 </div>
                 )}

@@ -11,7 +11,6 @@ export default function profile() {
   const router = useRouter()
   const [profile, setProfile] = useState({})
   const [transaction, setTransaction] = useState()
-  console.log("transactionnnnnn", transaction);
 
   useEffect(() => {
     const getProfile = async (e) => {

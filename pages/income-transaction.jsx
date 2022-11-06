@@ -39,7 +39,7 @@ export default function IncomeTransaction() {
               </tr>
             </thead>
             {income?.map((item, index) => (
-              <tbody key={index}>
+              <tbody key={item.id}>
                 <tr className="border-b bg-white">
                   <td className="py-4 px-6">{index + 1}</td>
                   <th scope="row" className="py-4 px-6 font-medium text-gray-900 whitespace-nowrap">{item.buyer.fullname}</th>

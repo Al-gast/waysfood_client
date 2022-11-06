@@ -203,7 +203,7 @@ export default function ModalAuth({showLogin, setShowLogin}) {
                   <Button type="submit" className="w-full bg-secondary text-white rounded-xl hover:bg-primary hover:text-white hover:border-primary  text-sm font-medium transition duration-300 py-2.5">Login</Button>
                 </div>
                 <div className="text-sm font-medium text-gray-500 text-center">
-                Don't have an account ? <a onClick={handleSwitchRegister} className="text-gray-600 font-bold hover:underline">Klik Here</a>
+                Do not have an account ? <a onClick={handleSwitchRegister} className="text-gray-600 font-bold hover:underline">Klik Here</a>
                 </div>
               </form>
             </Modal>
