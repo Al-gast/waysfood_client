@@ -5,7 +5,7 @@ import App from "next/app";
 import { UserContextProvider } from "../context/UserContext";
 import { CartContextProvider } from '../context/CartContext';
 import { QueryClient, QueryClientProvider } from "react-query";
-import CheckAuth from '../context/checkAuth';
+import CheckAuth from '../context/CheckAuth';
 
 class MyApp extends App {
   render() {
