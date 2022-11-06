@@ -13,7 +13,7 @@ import { Error, Success } from '../../helper/toast';
 import { API } from "../../pages/api/api";
 
 
-export default function navbar({showLogin, setShowLogin, counter}) {
+export default function Navbar({showLogin, setShowLogin, counter}) {
   const [state, dispatch] = useContext(UserContext)
   console.log(state);
   // const [carts, setCarts] = useContext(CartContext)

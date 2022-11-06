@@ -8,7 +8,7 @@ import { API } from "../api/api";
 import { useMutation } from "react-query";
 
 
-export default function menus() {
+export default function Menus() {
   const router = useRouter()
   const id = router.query.menu
 

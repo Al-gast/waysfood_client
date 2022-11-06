@@ -2,6 +2,8 @@ import React from 'react';
 import { MapContainer, TileLayer } from 'react-leaflet';
 import 'https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js';
 import L from 'leaflet';
+import Geocoder from './Geocoder';
+import GeoRouting from './GeoRouting';
 
 export default function Map({ routing, userProfile, form, setForm, partnerLocation }) {
   const markerIcon = L.icon({

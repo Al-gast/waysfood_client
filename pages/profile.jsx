@@ -7,7 +7,7 @@ import { API } from "./api/api"
 import { useEffect, useState } from "react"
 import dateFormat from "dateformat";
 
-export default function profile() {
+export default function Profile() {
   const router = useRouter()
   const [profile, setProfile] = useState({})
   const [transaction, setTransaction] = useState()
