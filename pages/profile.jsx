@@ -68,7 +68,7 @@ export default function Profile() {
                 ) : (
                 <div className='overflow-y-auto scrollbar-hide h-[17.5rem]'>
                   {transaction?.map((item) => (
-                      <Card className="block p-3 max-w-sm bg-white rounded-lg border border-gray-200 shadow-sm mb-2 py-4">
+                      <Card key={item.id} className="block p-3 max-w-sm bg-white rounded-lg border border-gray-200 shadow-sm mb-2 py-4">
                         <div className="flex justify-between">
                           <div>
                             <p className="font-bold">{item?.cart?.order[0]?.product?.user?.fullname}</p>

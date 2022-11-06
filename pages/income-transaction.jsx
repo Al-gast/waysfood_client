@@ -46,7 +46,7 @@ export default function IncomeTransaction() {
                   <td className="py-4 px-6">{item.buyer.location}</td>
                   <td className="py-4 px-6">
                       {item.cart.order.map((list) => (
-                          <p> {list.product.title}, </p>
+                          <p key={item.id}> {list.product.title}, </p>
                         ))}
                   </td>
                   <td className='py-4 px-6'>{Rp.convert(item.total)}</td>

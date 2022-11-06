@@ -76,7 +76,7 @@ export default function Menus() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
             {/* {addOrder.isLoading && <h1>Tunggu...</h1>} */}
             {data.products?.map ((item)=>(
-              <Card className="block p-2 max-w-sm bg-white rounded-lg border border-gray-200 shadow-sm ">
+              <Card key={item.id} className="block p-2 max-w-sm bg-white rounded-lg border border-gray-200 shadow-sm ">
                   <div className="">
                     <img src={`http://localhost:5000/uploads/${item.image}`} alt="logo" className="mb-2 h-[134px] w-[224px] object-cover object-center"/>
                     <p className="font-semibold text-secondary font-header text-lg">{item.title}</p>
