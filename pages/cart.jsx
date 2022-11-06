@@ -185,7 +185,7 @@ export default function Cart() {
                     {cart?.order?.map((item, index) => (
                       <div className="flex justify-between items-center w-full mb-3" key={index}>
                         <div className="flex items-center">
-                          <img src={`http://localhost:5000/uploads/${item.product?.image}`} alt="img" className="mr-3" width={80} height={80}/>
+                          <img src={item.product?.image} alt="img" className="mr-3" width={80} height={80}/>
                           <div>
                             <p className="mb-2 font-header">{item.product?.title}</p>
                             <div className="flex mt-2">

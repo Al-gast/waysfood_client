@@ -92,7 +92,7 @@ export default function Navbar({showLogin, setShowLogin, counter}) {
               <div className="ml-3">
                 <img src={profile?.image == ""
                     ? "/noProfile.png"
-                    : "http://localhost:5000/uploads/" + profile?.image} alt="profile" onClick={() => setShowDropdown(true)} className="cursor-pointer h-[60px] w-[60px] object-cover object-center rounded-full"/>
+                    : profile?.image} alt="profile" onClick={() => setShowDropdown(true)} className="cursor-pointer h-[60px] w-[60px] object-cover object-center rounded-full"/>
                 <Dropdown isVisible={showDropdown} onClose={() => setShowDropdown(false)}>
                   <div className={state.user?.role === "partner" ? "hidden" : ""}>
                     <Link href='/profile'>

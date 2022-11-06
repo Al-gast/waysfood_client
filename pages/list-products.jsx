@@ -54,7 +54,7 @@ export default function ListProduct() {
               <tbody key={item.id}>
                 <tr className="border-b bg-white">
                   <td className="py-4 px-6">{index + 1}</td>
-                  <td className="py-4 px-6"><img src={`http://localhost:5000/uploads/${item.image}`} alt="" className="m-0 h-[134px] w-[224px] object-cover object-center"/></td>
+                  <td className="py-4 px-6"><img src={item.image} alt="" className="m-0 h-[134px] w-[224px] object-cover object-center"/></td>
                   <th scope="row" className="py-4 px-6 font-medium text-gray-900 whitespace-nowrap">{item.title}</th>
                   <td className="py-4 px-6 font-medium text-gray-900 whitespace-nowrap">{Rp.convert(item.price)}</td>
                   <td className='pt-16 mt-2 px-6 flex justify-center'>

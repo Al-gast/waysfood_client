@@ -43,7 +43,7 @@ export default function Profile() {
               <div className="mb-8">
                 <p className="mb-5 font-bold text-4xl text-secondary font-header">My Profile</p>
                 <div className="flex items-center mb-5">
-                  <img src={`http://localhost:5000/uploads/${profile.image}`} alt="profile" width={180} height={222} className='mr-5 w-[180px] h-[222px] object-cover object-center'/>
+                  <img src={profile.image} alt="profile" width={180} height={222} className='mr-5 w-[180px] h-[222px] object-cover object-center'/>
                   <div>
                     <div>
                       <p className="font-semibold text-lg text-secondary">Full Name</p>
