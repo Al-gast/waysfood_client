@@ -83,7 +83,6 @@ export default function Cart() {
 
       // Insert transaction data
      const response = await API.post("/transaction", data);
-     console.log("response",response);
 
       const req = {
         qty: totalQty,

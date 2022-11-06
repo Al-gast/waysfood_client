@@ -11,7 +11,6 @@ export default function AddProduct() {
   const [previewName, setPreviewName] = useState("")
   const [form, setForm] = useState({})
   const route = useRouter()
-  // console.log("add product",form);
 
   const handleChange = (e) => {
     setForm({

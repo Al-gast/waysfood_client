@@ -45,7 +45,6 @@ export default function EditProfile() {
           image: response.data.data.image,
           location: response.data.data.location
         })
-        console.log(response);
       }catch (error){
         console.log(error);
       }
@@ -66,7 +65,7 @@ export default function EditProfile() {
         formData.set("image", profile?.image[0], profile?.image[0]?.name)
       }
       const response = await API.patch("/user", formData)
-      // console.log(response);
+
       Success({ message: `Update Profile Success!` })
       router.push('/profile')
     }catch(error){

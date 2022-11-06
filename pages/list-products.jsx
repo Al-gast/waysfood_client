@@ -10,7 +10,7 @@ export default function ListProduct() {
 
     const [state, dispatch] = useContext(UserContext)
     const id = state.user.id
-    // console.log("list id",state);
+ 
     const [data, setData] = useState([])
     const router = useRouter()
 
@@ -19,7 +19,7 @@ export default function ListProduct() {
         try {
             const response = await API.get(`/user/${id}`);
             setData(response.data.data.products);
-            // console.log("response",response);
+
         } catch (error) {
             console.log(error);
         }

@@ -7,7 +7,6 @@ import Rp from "rupiah-format";
 export default function IncomeTransaction() {
 
   const [income, setIncome] = useState();
-  console.log(income);
 
   useEffect(() => {
     const getIncome = async (e) => {
