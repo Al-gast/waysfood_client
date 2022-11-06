@@ -78,7 +78,7 @@ export default function Home() {
                 <Card>
                     <div className="">
                       <img src={item.products[0]?.image} alt="logo" className="mb-2 h-[134px] w-[224px] object-cover object-center"/>
-                      <p className="font-semibold text-secondary font-header text-lg">{item.products?.[0].title}</p>
+                      <p className="font-semibold text-secondary font-header text-lg">{item.products[0]?.title}</p>
                       <p className="font-semibold text-secondary">{item.range}{' '}km</p>
                     </div>
                 </Card>
