@@ -3,7 +3,7 @@ import React, { useContext, useEffect, useState } from 'react'
 import { API, setAuthToken } from '../pages/api/api'
 import { UserContext } from './UserContext'
 
-export default function checkAuth( {children} ) {
+export default function CheckAuth( {children} ) {
     const [state, dispatch] = useContext(UserContext)
     const router = useRouter()
 
